@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of Missions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center">Table of missions</h1>
+
+    <form id="task-form">
+        <div class="form-group">
+            <label for="task-description">תיאור משימה:</label>
+            <input type="text" id="task-description" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="task-deadline">זמן יעד:</label>
+            <input type="date" id="task-deadline" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">הוסף משימה</button>
+    </form>
+
+    <hr>
+
+    <h2>המשימות שלך:</h2>
+    <ul id="task-list" class="list-group">
+    </ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
